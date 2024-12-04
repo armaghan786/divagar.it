@@ -1,0 +1,906 @@
+﻿@* @model IEnumerable<FoodCategory> *@
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Divagar - Asporto</title>
+    <link rel="icon" type="image/x-icon" href="~/image/favicon.ico">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #343a40;
+            margin: 0;
+            padding: 20px;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .btnInfo {
+            color: #fafafa;
+        }
+
+        #HeaderImage {
+            padding: 20px 10px 0;
+            opacity: 1;
+            text-align: center;
+            box-shadow: none;
+        }
+
+        #menu-container {
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .menu {
+            margin-bottom: 20px;
+        }
+
+        .category {
+            margin-bottom: 50px;
+            padding: 30px 0;
+            background-color: 202020;
+            border: 1px solid #bab86c40;
+            border-radius: 4px;
+        }
+
+            .category h3 {
+                font-family: "Amiko";
+                font-size: 1.5em;
+                font-weight: 900;
+                letter-spacing: 2px;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 30px;
+                margin: 15px 0;
+                text-transform: uppercase;
+                color: #fafafa;
+                /*                 background-image: url(https://storage.googleapis.com/msgsndr/5vlvY9vHOsgHMYNfAVQ5/media/6686ba0ba637d44b3109cdef.png);
+         */ background-repeat: no-repeat;
+                background-size: 300px;
+                background-position: center;
+                background-position-y: bottom;
+            }
+
+            .category ul {
+                margin: 0;
+                padding: 0 30px;
+                list-style-type: none;
+            }
+
+            .category li {
+                font-family: "montserrat";
+                font-size: 1.2em;
+                padding: 20px 0;
+                border-bottom: 1px solid #dee2e6;
+                color: #fafafa;
+            }
+
+                .category li:last-child {
+                    border-bottom: none;
+                }
+
+            .category .item-name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #fafafa;
+            }
+
+            .category .item-details {
+                display: flex;
+                align-items: center;
+            }
+
+                .category .item-details span.name {
+                    margin-right: 10px;
+                    margin-bottom: 7px;
+                }
+
+            .category .subtext {
+                display: block;
+                font-style: italic;
+                font-size: 0.9em;
+                color: #fafafa;
+                margin-bottom: 7px;
+            }
+
+        .unavailable .item-name span.name {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .category .item-name > span {
+            width: 135px;
+            text-align: right;
+        }
+
+        .unavailable .item-name span.esaurito {
+            color: #fafafa;
+            margin-left: 5px;
+            font-size: 0.9em;
+        }
+
+        #flags {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flag {
+            cursor: pointer;
+            margin: 5px;
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #eeeedc;
+            border-radius: 3px;
+            background-color: #ffffff;
+            font-family: "montserrat";
+            font-weight: bold;
+            color: #000000;
+        }
+
+        #heading {
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 30px;
+            margin: 15px 0;
+            color: #272727;
+            font-family: "montserrat";
+            font-size: 1.1em;
+            padding: 20px 0;
+            color: #fafafa !important;
+        }
+
+        .fa.fa-info-circle {
+            color: #000000;
+        }
+
+        .lista-allergeni .allergene {
+            float: left;
+            width: 20%;
+            height: 70px;
+            padding: 0 .2rem;
+            margin-bottom: 2rem;
+            opacity: 0.2;
+        }
+
+            .lista-allergeni .allergene p {
+                font-size: .6rem;
+                font-weight: 600;
+                line-height: .7rem;
+            }
+
+            .lista-allergeni .allergene.on {
+                opacity: 1;
+                display: block;
+            }
+
+        .modal-header {
+            border-bottom: 0 !important;
+        }
+
+        .btnInfo {
+            border: 0;
+            background: transparent;
+        }
+
+        #footer {
+            font-size: 12px;
+            font-weight: 400;
+            color: #fafafa;
+        }
+
+        #footera {
+            color: #188bf6;
+            text-decoration: none;
+        }
+
+        #footerSetting {
+            font-family: 'Amiko';
+            background-color: #00000000;
+            color: #000000;
+            box-shadow: none;
+            padding: 20px 0 0;
+            opacity: 1;
+            text-shadow: none;
+            line-height: 1.3em;
+            letter-spacing: 0;
+            text-align: center;
+        }
+
+        .c-sub-heading {
+            word-break: break-word;
+        }
+
+        .c-wrapper {
+            position: relative;
+        }
+
+        @@media screen and (max-width: 1000px) {
+            .category .item-details {
+                align-items: baseline;
+                flex-direction: column;
+            }
+        }
+
+        @@media screen and (max-width: 950px) {
+            .category .item-name span {
+                max-width: 500px;
+            }
+        }
+
+        @@media screen and (max-width: 750px) {
+            .category {
+                margin-bottom: 35px;
+            }
+
+                .category .item-name span {
+                    max-width: 330px;
+                }
+
+            #heading {
+                font-size: 1em;
+            }
+        }
+
+        @@media screen and (max-width: 550px) {
+            .category .item-name span {
+                max-width: 250px;
+            }
+        }
+
+        @@media screen and (max-width: 450px) {
+            .category {
+                margin-bottom: 25px;
+                padding: 15px 0;
+            }
+
+                .category ul {
+                    padding: 0 15px;
+                }
+
+                .category li {
+                    font-size: 1rem;
+                }
+
+                .category .item-name > span {
+                    width: 120px;
+                }
+
+                .category h3 {
+                    padding-top: 10px;
+                    padding-bottom: 12px;
+                    margin: 5px 0 10px 0;
+                    background-size: 150px;
+                }
+        }
+
+        @@media screen and (max-width: 400px) {
+            .category .item-name span {
+                max-width: 200px;
+            }
+
+            .category li {
+                font-size: 0.9rem;
+            }
+
+            .category .item-name > span {
+                width: 110px;
+            }
+        }
+
+        @@media screen and (max-width: 365px) {
+            .category .item-name span {
+                max-width: 170px;
+            }
+
+            .category h3 {
+                padding-top: 15px;
+                margin: 0;
+                font-size: 1.2rem;
+            }
+        }
+        /* Styling the close button */
+        .close-button {
+            background: none; /* Remove the gray background */
+            border: none; /* Remove the border */
+            font-size: 24px; /* Increase size of the "X" */
+            color: #3d3d3d; /* Set the color of the "X" (if needed) */
+            position: absolute; /* Position the button */
+            top: 10px; /* Adjust vertical placement */
+            right: 10px; /* Move it to the far right */
+            cursor: pointer; /* Make it look clickable */
+        }
+
+            /* Optional hover effect */
+            .close-button:hover {
+                color: red; /* Change color on hover */
+            }
+
+        .subtext {
+            color: #898989 !important
+            }
+    </style>
+</head>
+<body style="background-color:#202020">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="HeaderImage">
+                <img width="150" height="105" src="https://assets.cdn.filesafe.space/WEQWiGHFq6TIEnTDSamE/media/671fb85cea801825d0aacc72.png" alt=" divagar" style="background-color:#202020;color: #fafafa">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="flags">
+                    <button class="flag" id="btnItalian">IT</button>
+                    <button class="flag" id="btnEnglish">EN</button>
+                    <button class="flag" id="btnSpanish">ES</button>
+                    <button class="flag" id="btnFrench">FR</button>
+                    <button class="flag" id="btnGermany">DE</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="heading">
+                    Coperto e Servizio 3€@*  (Si prega cortesemente di chiedere il conto al tavolo) *@
+                </div>
+            </div>
+        </div>
+        <div id="menu-container">
+            <div id="food-menu" class="menu">
+            </div>
+            <div class="row">
+
+                <divc class="col-12" class="c-sub-heading c-wrapper">
+                    <div id="footerSetting">
+                        <h2 id="footer"><i class="fa fa-power-off"></i>  Powered By <a id="footera" target="_self" href="https://tablesuite.it/">TableSuite</a></h2>
+                    </div>
+                </divc>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"><button type="button" class="close close-button" data-dismiss="modal" aria-label="Close" onclick="closeModal()"> <span aria-hidden="true">×</span> </button></div>
+                        <div class="modal-body">
+                            @*  <div class="custom-description" style="display:none;">
+                            <h4></h4>
+                            <p></p>
+                            </div>
+                            <div class="dettagli" style="display:none;">
+                            <h4></h4>
+                            <p></p>
+                            </div>
+                            *@
+                            <div class="lista-allergeni" style="display: block;">
+                                <h4 class="text-center" id="modalHeader">Allergeni</h4>
+                                <div class="text-center">
+
+                                    <div class="allergene" item="1">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M30,83.47h0c6.18,0,12.9-3.18,18.44-8.71,4.4-4.4,6.46-8.83,8.27-12.73,1.51-3.27,2.82-6.1,5.25-8.52A33.53,33.53,0,0,1,69.28,48a37.64,37.64,0,0,0,8.14-6.11c6.3-6.3,8.82-17.37,1.93-24.27A14.19,14.19,0,0,0,69.1,13.53a20.39,20.39,0,0,0-14,6.06,36.55,36.55,0,0,0-4.86,6.57,47.5,47.5,0,0,1-6.74,8.89c-2.42,2.42-5.24,3.73-8.51,5.25-3.91,1.81-8.33,3.86-12.74,8.27a29.42,29.42,0,0,0-8.31,14.62,16.38,16.38,0,0,0,4.44,15.44A16.16,16.16,0,0,0,30,83.47ZM18.09,64a25.57,25.57,0,0,1,7.16-12.44C29.12,47.7,33,45.9,36.77,44.15c3.48-1.61,6.77-3.14,9.73-6.1a51.72,51.72,0,0,0,7.32-9.62,33.34,33.34,0,0,1,4.27-5.83,16,16,0,0,1,11-4.82,10,10,0,0,1,7.24,2.88c5,5,2.92,13.4-1.93,18.25a33.74,33.74,0,0,1-7.31,5.48A37.42,37.42,0,0,0,59,50.51c-3,3-4.48,6.24-6.1,9.73-1.74,3.76-3.54,7.64-7.42,11.52C40.76,76.43,35,79.22,30,79.22a11.8,11.8,0,0,1-8.61-3.59A12.39,12.39,0,0,1,18.09,64Z"></path><path d="M28.46,69.29c-1.58-7.88,4.42-11.08,4.67-11.21l-1-1.9-1-1.9c-3.18,1.59-8.71,6.94-6.93,15.84Z"></path><rect x="70.74" y="26.88" width="5.04" height="4.25" transform="matrix(0.38, -0.93, 0.93, 0.38, 18.61, 85.76)"></rect><rect x="58.66" y="34.28" width="4.25" height="5.05" transform="translate(-8.21 53.77) rotate(-45.01)"></rect><rect x="60.26" y="23.58" width="5.04" height="4.25" transform="translate(3.37 58.46) rotate(-51.14)"></rect></svg></div>
+                                        <p class="titolo" id="modelItem1">Arachidi e derivati</p>
+                                    </div>
+                                    <div class="allergene" item="2">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M46.38,8.32v5.5C19,15,18.62,38.36,18.62,38.6v2.12h4.72C21.68,62.6,28,74.34,33.71,80.39c6.75,7.1,14.18,8.2,14.5,8.25l.29,0,.29,0c.32,0,7.75-1.15,14.5-8.25,5.75-6,12-17.79,10.37-39.67h4.72V38.6c0-.24-.34-23.62-27.75-24.78V8.32Zm2.13,76.05c-2.72-.56-23.89-6.16-20.91-43.65H69.4C72.42,78.42,51.43,83.81,48.51,84.37Zm25.42-47.9H23.05C23.82,31.19,27.8,18,48.5,18S73.14,31.19,73.93,36.47Z"></path><path d="M46.93,79.23l2.47-3.47a26.56,26.56,0,0,1-3.23-2.7l-3,3A31.4,31.4,0,0,0,46.93,79.23Z"></path><path d="M39.93,72.39l3.39-2.56A37.42,37.42,0,0,1,37,55.77l-4.14,1A41.59,41.59,0,0,0,39.93,72.39Z"></path><rect x="61.38" y="29.31" width="4.25" height="5.04" transform="translate(13.21 81.99) rotate(-71.54)"></rect><rect x="53.49" y="23.86" width="5.04" height="4.25" transform="matrix(0.02, -1, 1, 0.02, 28.82, 81.42)"></rect><rect x="43.71" y="26.83" width="4.25" height="5.04" transform="translate(2.84 62.73) rotate(-70.46)"></rect><rect x="31.35" y="25.38" width="5.05" height="4.25" transform="translate(-9.74 26.04) rotate(-37.15)"></rect></svg></div>
+                                        <p class="titolo" id="modelItem2">Frutta a guscio</p>
+                                    </div>
+                                    <div class="allergene" item="3">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M75.85,40.32,63.24,20.14V8.53H33.76V20.14L21.15,40.32V88.47h54.7ZM47.4,38.81H27.11l10-15.94H57.29ZM59,12.78v5.84H38V12.78ZM25.4,43.06H46.45l-.07,41.16h-21ZM71.6,84.22h-21l.07-42.68L61.12,24.77,71.6,41.54Z"></path><rect x="30.84" y="48.9" width="10.09" height="4.25"></rect><rect x="30.84" y="58.99" width="10.09" height="4.25"></rect></svg></div>
+                                        <p class="titolo" id="modelItem3">Latte e derivati</p>
+                                    </div>
+                                    <div class="allergene" item="4">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M84.12,25.31l-2.54,6.83A10.85,10.85,0,0,0,79.4,31a12,12,0,0,0-1.83-.52l2.57-6.92-4-1.48L73,30.68a8.79,8.79,0,0,0-3.32,1.94,11.54,11.54,0,0,0-2.78,4L63,46.75C58.52,39.55,50.85,35,41.43,34.52A22.3,22.3,0,0,0,18.12,55.77a18.23,18.23,0,0,0,.17,3.47L8.9,74.89H55.54c18.26,0,24.21-17.48,24.71-19.09L85,43.54a10.3,10.3,0,0,0-.22-7.77l3.33-9ZM20,64.69a17.58,17.58,0,0,0,4.69,6H16.4Zm26.69,6a14.91,14.91,0,0,0,4.57-10.1,12.47,12.47,0,0,0-11.86-13,10.41,10.41,0,0,0-10.87,9.9,8.73,8.73,0,0,0,8.33,9.13L37,62.31a4.48,4.48,0,0,1-4.27-4.7,6.14,6.14,0,0,1,6.42-5.84A8.21,8.21,0,0,1,47,60.35a10.68,10.68,0,0,1-3.5,7.47,10.8,10.8,0,0,1-7.78,2.81A14,14,0,0,1,22.36,56a18.06,18.06,0,0,1,18.88-17.2c12.95.6,22,10.57,22,24.25V69.2a20.44,20.44,0,0,1-7.7,1.44ZM81,42,76.26,54.34l-.06.18a25.94,25.94,0,0,1-8.71,12.31V63a32.17,32.17,0,0,0-1.88-11l5.24-13.84a7.39,7.39,0,0,1,1.68-2.39c1.45-1.33,3.2-1.57,5.35-.75C82.65,36.82,81.33,41.18,81,42Z"></path></svg></div>
+                                        <p class="titolo" id="modelItem4">Molluschi</p>
+                                    </div>
+                                    <div class="allergene" item="5">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M88.16,66.9c-.1-.39-2.29-9-6.79-14.63,4.08-5.19,7.36-14.32,6.69-15.93L87.52,35H86.1c-.51,0-11.37.08-17.6,6.3a28,28,0,0,0-12-7.63A35.17,35.17,0,0,0,58,24.53V22.41H55.82c-5.63,0-15.72,2.71-21.29,10.11-18,.69-25.74,18.17-26.07,18.93l-.28.66.17.69c.06.22,5.76,21.79,32.34,21.79,13,0,21.69-3.5,27.86-11.29,6.24,6.17,17,6.25,17.55,6.25h2.72ZM12.68,52.46c1.49-3,8.26-14.82,21.48-15.66a53.85,53.85,0,0,1,.17,33C18.55,67.28,13.68,55.5,12.68,52.46Zm21,19.17Zm36.52-13L68.44,56l-1.77,2.65c-5.45,8.18-13.22,11.67-26,11.67-.69,0-1.37,0-2,0A57.31,57.31,0,0,0,38,35c3.94-5.14,10.79-7.56,15.55-8.16a38.45,38.45,0,0,1-1.76,7.6L51,36.71l2.4.5c.09,0,8.79,1.92,13.3,8.69l1.77,2.65,1.77-2.65c3-4.46,9.24-5.92,13-6.39C82.09,42.7,80,47.79,77,50.78l-1.5,1.51,1.5,1.5c3,3,5.06,8.09,6.14,11.28C79.45,64.6,73.19,63.14,70.21,58.67Z"></path><rect x="23.43" y="47.24" width="4.25" height="5.05"></rect></svg></div>
+                                        <p class="titolo" id="modelItem5">Pesce</p>
+                                    </div>
+                                    <div class="allergene" item="6">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M24.08,39a42.57,42.57,0,0,0,5.05,16.6l3.73-2a38.33,38.33,0,0,1-4.55-14.92Z"></path><path d="M77.56,41a4.4,4.4,0,0,0-2.1-.46,18.27,18.27,0,0,0-7.37,2.32c4.17-15.28-1.81-31.07-6.51-32.36S43.69,19.74,39.52,35c-.14.54-.26,1.05-.39,1.58-6.55-5.5-13.89-8.44-18-8.44a4.87,4.87,0,0,0-2.76.69c-4.06,2.69-4.81,19.57,3.93,32.78,5.09,7.71,9.88,11.31,15,11.31,2.61,0,5.23-.93,8.24-2.92.45-.3.93-.63,1.41-1-1.62,7,.76,12,7.29,15.46a15.71,15.71,0,0,0,7.46,2.18h0c5.57,0,10.33-4,15-12.69C84.17,60,81.86,43.26,77.56,41ZM60.45,14.58C62.52,16.14,67.61,28.44,64,41.7a44.32,44.32,0,0,1-1.53,4.64,42.73,42.73,0,0,0-10.25,10.9,21.23,21.23,0,0,0-1.66-5.54l.63.58A46.73,46.73,0,0,0,55,47.47a40,40,0,0,0,4.45-8.24l-3.95-1.58a35.89,35.89,0,0,1-4,7.37c-.9,1.27-1.78,2.42-2.64,3.42-.57-1-1.21-2.06-1.93-3.15A38.62,38.62,0,0,0,42.75,40c.22-1.24.5-2.52.87-3.86C47.24,22.87,57.88,14.87,60.45,14.58ZM43.23,66.46c-2.29,1.51-4.16,2.22-5.9,2.22-3.56,0-7.33-3.08-11.51-9.4-7.57-11.45-6.59-24.71-5.11-26.86l.4,0c3.61,0,15.16,4.38,22.33,15.23C47,53,48.49,57.21,48,60.31,47.67,62.63,46.24,64.47,43.23,66.46ZM73,72C69.18,79,65.51,82.4,61.73,82.4a11.7,11.7,0,0,1-5.45-1.68c-4.71-2.52-8.74-6-2-18.73,6.1-11.38,17.58-17.25,21.14-17.25h.09C77.22,46.75,79.43,59.85,73,72Z"></path><path d="M67.17,64.38a43.14,43.14,0,0,1-2.92,4.76l3.45,2.48a48.46,48.46,0,0,0,3.22-5.24,39.84,39.84,0,0,0,3.41-8.71l-4.11-1.09A35.83,35.83,0,0,1,67.17,64.38Z"></path><path d="M58.35,74.38l1.53,4a14.6,14.6,0,0,0,4.64-3L61.6,72.22A10,10,0,0,1,58.35,74.38Z"></path></svg></div>
+                                        <p class="titolo" id="modelItem6">Sesamo</p>
+                                    </div>
+                                    <div class="allergene" item="7">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M34.83,88.12h0c10.57,0,21.45-5.52,32.34-16.42C82.6,56.27,84.46,43.37,83.3,35.26A27.73,27.73,0,0,0,77.83,22.2,48.18,48.18,0,0,0,79.26,8.88L75,9.2a42.76,42.76,0,0,1-1,10.37,15.15,15.15,0,0,0-3.35-.33A26.28,26.28,0,0,0,52.7,26.65a28.91,28.91,0,0,0-5.88,9.41,28.91,28.91,0,0,0-9.41,5.88,28.91,28.91,0,0,0-5.88,9.41,28.91,28.91,0,0,0-9.41,5.88c-11,11-10,19.81-5.73,24A27.25,27.25,0,0,0,34.83,88.12ZM64.17,68.7C54.1,78.77,44.23,83.87,34.83,83.87h0A24.07,24.07,0,0,1,23.36,81c6.47-1.69,18.17-6.58,32.34-20.75C67.43,48.51,73.36,36.82,76.34,27.57,80,34.05,84.11,48.76,64.17,68.7ZM30.86,66A8.69,8.69,0,0,1,43,65.83a69.43,69.43,0,0,1-14.31,8.74A8.72,8.72,0,0,1,30.86,66Zm12.75-9.15a8.68,8.68,0,0,1,14.83-6.13.52.52,0,0,1,.1.11c-1.76,2.13-3.69,4.28-5.84,6.43s-4.32,4.14-6.38,5.89c0-.06-.11-.1-.17-.16A8.62,8.62,0,0,1,43.61,56.82ZM61.19,47.4a8.68,8.68,0,0,1,8.4-14.32A76,76,0,0,1,61.19,47.4ZM25.13,60.24A26.11,26.11,0,0,1,33.85,55l1-.33.33-1A25.92,25.92,0,0,1,40.42,45a25.81,25.81,0,0,1,8.72-5.22l1-.34.33-1a26.09,26.09,0,0,1,5.22-8.72,21.91,21.91,0,0,1,14.93-6.17A11.36,11.36,0,0,1,73,23.7c-.47,1.71-1,3.52-1.76,5.42a12.92,12.92,0,0,0-16.28,15A12.93,12.93,0,0,0,39.36,56.82a12.68,12.68,0,0,0,.27,2.63A12.93,12.93,0,0,0,24.71,76.12a30.41,30.41,0,0,1-5.91,1.43C16.59,74.44,17,68.34,25.13,60.24Z"></path></svg></div>
+                                        <p class="titolo" id="modelItem7">Soia</p>
+                                    </div>
+                                    <div class="allergene" item="8">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M63.64,25.13h-27a7.16,7.16,0,0,0-11.58,0H15.72a2.73,2.73,0,0,1-2.94-2.92,2.73,2.73,0,0,1,2.92-2.92H40.93c3.9,0,9.7-2.58,9.7-9.7H46.38c0,5.12-4.55,5.44-5.45,5.45H15.7a7,7,0,0,0-7.17,7.17,6.76,6.76,0,0,0,5.05,6.85v5.76c0,11.66,11.29,14.74,17.26,14.74h22.7c.56,0,5.45.15,5.45,5.44,0,5.12-4.55,5.44-5.45,5.45-5.11,0-9.79.86-18.6,5.27-4.4,2.2-6.64,2.3-6.62,2.3H26.19v2.12c0,3.52,2.1,8.57,7.73,9.53,1,5.63,6,7.74,9.54,7.74l2,0,.07-2.05s.1-2.27,2.3-6.66a6.82,6.82,0,0,1,5.66-3.87h10.1c.25,0,24.83-.28,24.83-24.83S63.89,25.13,63.64,25.13Zm-32.8,1.3a2.92,2.92,0,1,1-2.92,2.92A2.92,2.92,0,0,1,30.84,26.43Zm-13,8.39V29.38h5.84a7.17,7.17,0,0,0,14.34,0H48.9V45.31H30.84C30.31,45.31,17.83,45.14,17.83,34.82ZM53.54,45.31h-.39V29.38H63.63A25.23,25.23,0,0,1,75.36,32.7L60.24,47.83A10.38,10.38,0,0,0,53.54,45.31ZM44.08,76.76a30,30,0,0,0-2.37,6.13c-1.63-.46-3.7-1.73-3.7-5.18V75.58H35.89c-3.46,0-4.72-2.07-5.18-3.69a30.23,30.23,0,0,0,6.13-2.37C43.91,66,48,64.94,51.9,64.74l1.45,5.81A11.08,11.08,0,0,0,44.08,76.76Zm13.65-6.22-1.55-6.21a9.13,9.13,0,0,0,6.59-6.12l14.84,7.42c-5.82,4.78-13.46,4.91-14,4.91ZM80.65,62.4,63.16,53.65a10,10,0,0,0-.5-2.23l16.1-16.11c3.11,3,5.46,7.67,5.46,14.65C84.22,55.44,82.77,59.45,80.65,62.4Z"></path></svg></div>
+                                        <p class="titolo" id="modelItem8">Crostacei</p>
+                                    </div>
+                                    <div class="allergene" item="9">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M50.73,40.53c3.06,0,8.29-.58,12.3-4.05,3.46-3,5.22-7.45,5.25-13.21h0v-8.9H64v6.71c-6.68.31-10.83,2.09-13.42,4.2V8.13H46.37V25.28c-2.58-2.11-6.74-3.89-13.41-4.2V14.37H28.71v8.9h0c0,5.76,1.79,10.21,5.25,13.21,4,3.47,9.24,4.05,12.3,4.05h.1v4.93c-2.84-2.33-7.59-4.26-15.53-4.26H28.71v2.13c0,5.82,1.77,10.31,5.26,13.33,4,3.47,9.24,4.06,12.3,4.06h.1v4.92c-2.84-2.32-7.59-4.25-15.53-4.25H28.71v2.12c0,5.82,1.77,10.31,5.26,13.34,4,3.47,9.24,4.05,12.3,4.05h.1v8h4.25v-8h.11c3.06,0,8.29-.58,12.3-4.06,3.49-3,5.26-7.51,5.26-13.33V61.39H66.16c-7.94,0-12.69,1.93-15.54,4.25V60.72h.11c3.06,0,8.29-.59,12.3-4.06,3.49-3,5.26-7.51,5.26-13.33V41.2H66.16c-7.94,0-12.69,1.93-15.54,4.26V40.53Zm13.2-15.2a11.66,11.66,0,0,1-3.67,7.92c-3,2.64-7.25,3-9.64,3v-3C50.63,33,51,26.05,63.93,25.33ZM36.76,33.27a11.64,11.64,0,0,1-3.69-7.94c12.93.72,13.3,7.63,13.3,7.91v3C44,36.3,39.8,35.91,36.76,33.27Zm0,20.18a11.64,11.64,0,0,1-3.69-7.94c12.93.72,13.3,7.63,13.3,7.91v3C44,56.49,39.8,56.09,36.76,53.45Zm0,20.18a11.62,11.62,0,0,1-3.69-7.93c12.93.71,13.3,7.62,13.3,7.9v3.05C44,76.67,39.8,76.28,36.76,73.63ZM63.93,65.7a11.71,11.71,0,0,1-3.67,7.92c-3,2.63-7.25,3-9.64,3v-3C50.62,73.53,50.78,66.42,63.93,65.7Zm0-20.19a11.66,11.66,0,0,1-3.67,7.92c-3,2.64-7.25,3-9.64,3v-3C50.62,53.34,50.78,46.24,63.93,45.51Z"></path></svg></div>
+                                        <p class="titolo" id="modelItem9">Glutine</p>
+                                    </div>
+                                    <div class="allergene" item="10">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M29.89,77.41c9.12,0,14.93-1.55,18.78-5.1,3.29,3.94,8.65,5.4,12.86,5.4,13.48,0,22.23-6.62,24.64-18.63,1.24-6.21-.62-10.11-2.41-12.28C81,43.41,76.2,41.46,70.65,41.46a23.35,23.35,0,0,0-4.9.53,23.42,23.42,0,0,0,1-3.13c1.29-5.15.57-9.68-2.1-13.09C61.42,21.6,55.42,19.3,47.8,19.3h-.86c-5.51,0-13.81-.09-18.08,12.73-1.43,4.28-1.51,7.86-.23,10.85C21.49,44.26,18.45,47.73,14,54.37c-3.8,5.69-4.62,11.18-2.33,15.47C13.55,73.29,18.21,77.41,29.89,77.41ZM80.48,49.49c1.74,2.13,2.26,5.08,1.52,8.76-2,10.09-8.91,15.21-20.47,15.21-4.45,0-8.48-1.88-10.27-4.79s-1.52-7.06.89-11.87c2.51-5,4.85-7.54,12.87-10.22a18,18,0,0,1,5.63-.87C74.92,45.71,78.51,47.09,80.48,49.49ZM32.89,33.38c3.3-9.9,8.51-9.86,14-9.83h.88c6.29,0,11.09,1.72,13.52,4.83,1.86,2.38,2.3,5.56,1.33,9.45a17.1,17.1,0,0,1-2.65,6l.09.06A23.36,23.36,0,0,0,53.24,48c-2.12-2.89-6.36-5.88-14.89-5.88-1.92,0-3.64.06-5.21.17C31.7,40.14,31.61,37.22,32.89,33.38ZM17.56,56.73c5.35-8,7.49-10.34,20.79-10.34,4.38,0,9.85.91,12,5a30.52,30.52,0,0,0-2,3.51c-3,6-2.9,10.48-1.85,13.57-2.13,2.41-6,4.69-16.61,4.69-7.47,0-12.6-1.89-14.44-5.33C13.93,65,14.68,61.05,17.56,56.73Z"></path><path d="M63.43,70.1c14.16-2.83,14.32-11.8,14.32-12.18l-4.25,0c0,.25-.34,5.94-10.9,8.05Z"></path><path d="M43.48,32.2c5.69-1.81,11.56,1.47,11.61,1.5L57.22,30c-.31-.18-7.53-4.26-15-1.87-3.35,1.06-4.71,5.62-4.95,6.53l4.11,1.08C41.69,34.47,42.69,32.45,43.48,32.2Z"></path><path d="M28.91,68.72a58.71,58.71,0,0,0,11.87-.92l-.94-4.14a58.25,58.25,0,0,1-10.94.81h0a18.73,18.73,0,0,1-6.42-1.14l-1.62,3.94a23.14,23.14,0,0,0,8,1.45Z"></path></svg></div>
+                                        <p class="titolo" id="modelItem10">Lupini</p>
+                                    </div>
+                                    <div class="allergene" item="11">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M57.51,21.15l-5-12.62H44.54l-5,12.62H33.76V31.24h-5V88.47H68.29V31.24H63.24V21.15Zm-10.1-8.37h2.17l3.35,8.37H44.07ZM38,25.4H59v5.84H38ZM64,84.22H33V35.49H64Z"></path><rect x="38.81" y="53.55" width="4.25" height="25.23"></rect><rect x="38.81" y="43.46" width="4.25" height="5.05"></rect></svg></div>
+                                        <p class="titolo" id="modelItem11">Senape</p>
+                                    </div>
+                                    <div class="allergene" item="12">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M25.86,86.27h.19c4.48,0,9.14-2.48,14.24-7.58,8-8,16.16-21.6,19.69-27.84,4.19,4,10.05,8.07,16.77,8.07A17.5,17.5,0,0,0,84.62,57l1.64-.83-.58-1.75a29.25,29.25,0,0,0-5.15-9.13,26.56,26.56,0,0,0,3.69-2.93l1.5-1.5-1.5-1.5a19.17,19.17,0,0,0-7.78-4.58,26.35,26.35,0,0,0-.24-12.57l-.33-1.09-1.09-.33a25.5,25.5,0,0,0-6.85-.88,24.76,24.76,0,0,0-5.72.64,19.2,19.2,0,0,0-4.57-7.78l-1.5-1.5-1.51,1.5a26,26,0,0,0-3,3.65,29.07,29.07,0,0,0-9.08-5.11l-1.75-.58L40,12.38c-5,9.93.6,18.88,6.14,24.63C39.9,40.55,26.33,48.66,18.3,56.7c-9.14,9.14-10,17.18-2.59,24.58C17.82,83.39,21.16,86.2,25.86,86.27ZM37.28,75.69C33.08,79.89,29.3,82,26,82h-.11c-2.25,0-4.41-1.1-6.75-3.31-.32-5.46,17.54-21.35,35.47-33.95.58.79,1.35,1.77,2.28,2.85C53.92,53,45.39,67.58,37.28,75.69ZM80.94,53.94c-6.07,2-11.83-.93-16.18-4.58a17.49,17.49,0,0,0,2.91.24,21.45,21.45,0,0,0,9.1-2.17A25.54,25.54,0,0,1,80.94,53.94ZM56.11,17.57c1.09,1.54,2.24,3.69,2.17,5.65l-.11,3.15,3-1.08a19.92,19.92,0,0,1,6.8-1.13,23.5,23.5,0,0,1,4.48.43,21.76,21.76,0,0,1-.71,11.27l-1.08,3,3.15-.11h.17a10.39,10.39,0,0,1,5.46,2.17c-2.34,1.78-6.73,4.48-11.73,4.48-3.94,0-7.64-1.7-11-5C47.53,31.14,53.1,21.49,56.11,17.57Zm-13-1.52a25.85,25.85,0,0,1,6.46,4.14,20.56,20.56,0,0,0-1.87,12.09C44,27.93,41,22.15,43.06,16.05ZM21.3,59.7C29.41,51.6,44,43.08,49.38,40.07c.77.66,1.5,1.24,2.13,1.73-3.65,2.61-10.83,7.88-17.76,13.7C22.59,64.86,17.8,70.79,16,74.73,14,71.13,14.46,66.55,21.3,59.7Z"></path></svg></div>
+                                        <p class="titolo" id="modelItem12">Sedano</p>
+                                    </div>
+                                    <div class="allergene" item="13">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M23.67,86.49l.15,2H73.18l.15-2C75.63,54.26,61.66,38.38,58.19,35V22.87h.4a7,7,0,0,0,7.17-7.17,7,7,0,0,0-7.17-7.17H38.41a7,7,0,0,0-7.17,7.17,7,7,0,0,0,7.17,7.17h.4V35C35.34,38.38,21.37,54.26,23.67,86.49Zm45.54-2.27H27.79a75.86,75.86,0,0,1,3.09-26.71,7.41,7.41,0,0,0,1.46-1.2c.58-.58.68-.64,1-.64s.44.06,1,.64a5.25,5.25,0,0,0,8,0c.58-.58.68-.64,1-.64s.45.06,1,.64a5.26,5.26,0,0,0,8.06,0c.57-.58.67-.64,1-.64s.45.06,1,.64a5.25,5.25,0,0,0,8,0c.58-.58.67-.64,1-.64s.44.06,1,.64a7.41,7.41,0,0,0,1.46,1.2A75.86,75.86,0,0,1,69.21,84.22ZM35.49,15.7a2.73,2.73,0,0,1,2.92-2.92H58.57a2.73,2.73,0,0,1,2.94,2.92,2.73,2.73,0,0,1-2.93,2.92H38.41A2.71,2.71,0,0,1,35.49,15.7Zm18.45,7.17v14l.73.64c.09.07,5,4.51,9.17,13.94l-.21,0a5.36,5.36,0,0,0-4,1.89c-.58.57-.67.63-1,.63s-.44-.06-1-.63a5.23,5.23,0,0,0-8,0c-.58.57-.67.63-1,.63s-.44-.06-1-.63a5.23,5.23,0,0,0-8,0c-.58.57-.68.63-1,.63s-.44-.06-1-.63a5.38,5.38,0,0,0-4-1.89l-.21,0C37.27,42,42.23,37.58,42.31,37.5l.75-.64v-14Z"></path><rect x="40.59" y="64.38" width="4.25" height="5.05" transform="translate(-34.79 49.8) rotate(-45)"></rect><rect x="50.68" y="74.47" width="4.25" height="5.05" transform="translate(-38.98 59.9) rotate(-45.01)"></rect><rect x="57.01" y="64.59" width="5.04" height="4.25" transform="translate(-29.77 71.24) rotate(-51.15)"></rect><rect x="32.42" y="74.69" width="5.04" height="4.25" transform="translate(-46.79 55.83) rotate(-51.14)"></rect></svg></div>
+                                        <p class="titolo" id="modelItem13">Solfiti</p>
+                                    </div>
+                                    <div class="allergene" item="14">
+                                        <div class="icona"><svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97"><title>Tavola disegno 1</title><path d="M48.5,78.38A17.27,17.27,0,1,0,31.24,61.11,17.28,17.28,0,0,0,48.5,78.38Zm0-30.28a13,13,0,1,1-13,13A13,13,0,0,1,48.5,48.1Z"></path><path d="M48.5,88.47c13.62,0,27.35-10,27.35-32.4,0-21-12.87-47.54-27.35-47.54S21.15,35.11,21.15,56.07C21.15,78.45,34.89,88.47,48.5,88.47Zm0-75.69c10.8,0,23.1,23.06,23.1,43.29,0,19.44-11.6,28.15-23.1,28.15S25.4,75.51,25.4,56.07C25.4,35.84,37.7,12.78,48.5,12.78Z"></path></svg></div>
+                                        <p class="titolo" id="modelItem14">Uova e derivati</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+</body>
+</html>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        $.ajax({
+            url: '/Home/GetAsportoMenu?lang=IT',
+            type: 'GET',
+            success: function (data) {
+                renderCategories(data.category, data.foodItems, "IT");
+            },
+            error: function (xhr, status, error) {
+                console.error('Error fetching categories:', error);
+            }
+        });
+
+        $("#btnItalian").on('click', function () {
+            $.ajax({
+                url: '/Home/GetAsportoMenu?lang=IT',
+                type: 'GET',
+                success: function (data) {
+                    renderCategories(data.category, data.foodItems, "IT");
+                    $("#heading").text("Coperto e Servizio 3€ ");
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching categories:', error);
+                }
+            });
+        });
+
+        $("#btnEnglish").on('click', function () {
+            $.ajax({
+                url: '/Home/GetAsportoMenu?lang=EN',
+                type: 'GET',
+                success: function (data) {
+                    renderCategories(data.category, data.foodItems, "EN");
+                    $("#heading").text("Cover charge and service €3");
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching categories:', error);
+                }
+            });
+        });
+
+
+        $("#btnSpanish").on('click', function () {
+            $.ajax({
+                url: '/Home/GetAsportoMenu?lang=ES',
+                type: 'GET',
+                success: function (data) {
+                    renderCategories(data.category, data.foodItems, "ES");
+                    $("#heading").text("Cobertura y servicio 3€ ");
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching categories:', error);
+                }
+            });
+        });
+
+
+        $("#btnFrench").on('click', function () {
+            $.ajax({
+                url: '/Home/GetAsportoMenu?lang=FR',
+                type: 'GET',
+                success: function (data) {
+                    renderCategories(data.category, data.foodItems, "FR");
+                    $("#heading").text("Forfait et service 3€");
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching categories:', error);
+                }
+            });
+        });
+
+
+        $("#btnGermany").on('click', function () {
+            $.ajax({
+                url: '/Home/GetAsportoMenu?lang=DE',
+                type: 'GET',
+                success: function (data) {
+                    renderCategories(data.category, data.foodItems, "DE");
+                    $("#heading").text("Gedeck und Bedienung 3 € ");
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching categories:', error);
+                }
+            });
+        });
+
+        function renderCategories(categories, foodItems, lang) {
+            var categoryContainer = $('#food-menu');
+            categoryContainer.empty();
+            var categoryHtml = '';
+            for (var i = 0; i < categories.$values.length; i++) {
+                if (lang === "IT") {
+                    $("#modalHeader").text("Allergeni");
+                    $("#modelItem1").text("Arachidi e derivati");
+
+                    $("#modelItem1").text("Arachidi e derivati");
+                    $("#modelItem2").text("Frutta a guscio");
+                    $("#modelItem3").text("Latte e derivati");
+                    $("#modelItem4").text("Molluschi");
+                    $("#modelItem5").text("Pesce");
+                    $("#modelItem6").text("Sesamo");
+                    $("#modelItem7").text("Soia");
+                    $("#modelItem8").text("Crostacei");
+                    $("#modelItem9").text("Glutine");
+                    $("#modelItem10").text("Lupini");
+                    $("#modelItem11").text("Senape");
+                    $("#modelItem12").text("Sedano");
+                    $("#modelItem13").text("Solfiti");
+                    $("#modelItem14").text("Uova e derivati");
+                    categoryHtml = `
+                                <div class="category">
+                                        <h3>${categories.$values[i].categoryName}</h3>
+                                    <ul>`;
+
+                    var foodItem = foodItems.$values
+                        .filter(item => item.categoryID === categories.$values[i].categoryID);
+                    for (var j = 0; j < foodItem.length; j++) {
+
+                        var subtextHtml = foodItem[j].subtext ? `<span class="subtext">${foodItem[j].subtext}</span>` : '';
+
+                        // if (foodItem[j].isAvailable === true) {
+                        categoryHtml += `
+                                    <li class="available">
+                                        <div class="item-name">
+                                            <div class="item-details">
+                                                    <span class="name">${foodItem[j].itemName}</span>
+                                            </div>
+                                                <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                                ${subtextHtml}
+                                            <span class="itemprice">${foodItem[j].itemPrice}</span>
+                                    </li>`;
+                        // }
+                        // else {
+                        //     categoryHtml += `
+                        //             <li class="available">
+                        //                 <div class="item-name">
+                        //                     <div class="item-details">
+                        //                           <del>  <span class="name">${foodItem[j].itemName}</span></del>
+                        //                                                                       <span>Esaurito</span>
+
+                        //                     </div>
+                        //                         <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                        //                         <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        //                     </button>
+                        //                 </div>
+                        //                      <del>   ${subtextHtml}
+                        //                     <span class="itemprice">${foodItem[j].itemPrice}</span></del>
+                        //             </li>`;
+                        // }
+                    }
+                }
+
+                if (lang === "EN") {
+                    $("#modalHeader").text("Allergens");
+                    $("#modelItem1").text("Peanuts and derivatives");
+
+                    $("#modelItem2").text("Tree nuts");
+                    $("#modelItem3").text("Milk and derivatives");
+                    $("#modelItem4").text("Mollusks");
+                    $("#modelItem5").text("Fish");
+                    $("#modelItem6").text("Sesame");
+                    $("#modelItem7").text("Soy");
+                    $("#modelItem8").text("Crustaceans");
+                    $("#modelItem9").text("Gluten");
+                    $("#modelItem10").text("Lupins");
+                    $("#modelItem11").text("Mustard");
+                    $("#modelItem12").text("Celery");
+                    $("#modelItem13").text("Sulfites");
+                    $("#modelItem14").text("Eggs and derivatives");
+                    categoryHtml = `
+                                    <div class="category">
+                                            <h3>${categories.$values[i].categoryNameEnglish}</h3>
+                                        <ul>`;
+
+                    var foodItem = foodItems.$values
+                        .filter(item => item.categoryID === categories.$values[i].categoryID);
+                    for (var j = 0; j < foodItem.length; j++) {
+
+                        var subtextHtml = foodItem[j].subtextEnglish ? `<span class="subtext">${foodItem[j].subtextEnglish}</span>` : '';
+
+                        // if (foodItem[j].isAvailable === true) {
+                        categoryHtml += `
+                                        <li class="available">
+                                            <div class="item-name">
+                                                <div class="item-details">
+                                                        <span class="name">${foodItem[j].itemNameEnglish}</span>
+                                                </div>
+                                                    <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                                    ${subtextHtml}
+                                                <span class="itemprice">${foodItem[j].itemPriceEnglish}</span>
+                                        </li>`;
+                        // }
+                        // else {
+                        // categoryHtml += `
+                        //         <li class="available">
+                        //             <div class="item-name">
+                        //                 <div class="item-details">
+                        //                        <del> <span class="name">${foodItem[j].itemNameEnglish}</span></del>
+                        //                 </div>
+                        //                     <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                        //                     <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        //                 </button>
+                        //             </div>
+                        //                   <del>  ${subtextHtml}
+                        //                 <span class="itemprice">${foodItem[j].itemPriceEnglish}</span></del>
+                        //         </li>`;
+                        // }
+                    }
+                }
+
+
+                if (lang === "ES") {
+                    $("#modalHeader").text("Alérgenos");
+                    $("#modelItem1").text("Cacahuetes y derivados");
+
+                    $("#modelItem2").text("Frutos secos");
+                    $("#modelItem3").text("Leche y derivados");
+                    $("#modelItem4").text("Moluscos");
+                    $("#modelItem5").text("Pescado");
+                    $("#modelItem6").text("Sésamo");
+                    $("#modelItem7").text("Soja");
+                    $("#modelItem8").text("Crustáceos");
+                    $("#modelItem9").text("Gluten");
+                    $("#modelItem10").text("Altramuces");
+                    $("#modelItem11").text("Mostaza");
+                    $("#modelItem12").text("Apio");
+                    $("#modelItem13").text("Sulfitos");
+                    $("#modelItem14").text("Huevos y derivados");
+                    categoryHtml = `
+                                        <div class="category">
+                                                <h3>${categories.$values[i].categoryNameSpanish}</h3>
+                                            <ul>`;
+
+                    var foodItem = foodItems.$values
+                        .filter(item => item.categoryID === categories.$values[i].categoryID);
+                    for (var j = 0; j < foodItem.length; j++) {
+
+                        var subtextHtml = foodItem[j].subtextSpanish ? `<span class="subtext">${foodItem[j].subtextSpanish}</span>` : '';
+
+
+                        // if (foodItem[j].isAvailable === true) {
+                        categoryHtml += `
+                                            <li class="available">
+                                                <div class="item-name">
+                                                    <div class="item-details">
+                                                            <span class="name">${foodItem[j].itemNameSpanish}</span>
+                                                    </div>
+                                                        <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                                        ${subtextHtml}
+                                                    <span class="itemprice">${foodItem[j].itemPriceSpanish}</span>
+                                            </li>`;
+                        // }
+                        // else {
+                        //     categoryHtml += `
+                        //                     <li class="available">
+                        //                         <div class="item-name">
+                        //                             <div class="item-details">
+                        //                                    <del> <span class="name">${foodItem[j].itemNameSpanish}</span></del>
+                        //                             </div>
+                        //                                 <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                        //                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        //                             </button>
+                        //                         </div>
+                        //                                <del> ${subtextHtml}
+                        //                             <span class="itemprice">${foodItem[j].itemPriceSpanish}</span> </del>
+                        //                     </li>`;
+                        // }
+                    }
+                }
+
+                if (lang === "FR") {
+                    $("#modalHeader").text("Allergènes");
+                    $("#modelItem1").text("Arachides et dérivés");
+
+                    $("#modelItem2").text("Fruits à coque");
+                    $("#modelItem3").text("Lait et dérivés");
+                    $("#modelItem4").text("Mollusques");
+                    $("#modelItem5").text("Poisson");
+                    $("#modelItem6").text("Sésame");
+                    $("#modelItem7").text("Soja");
+                    $("#modelItem8").text("Crustacés");
+                    $("#modelItem9").text("Gluten");
+                    $("#modelItem10").text("Lupins");
+                    $("#modelItem11").text("Moutarde");
+                    $("#modelItem12").text("Céleri");
+                    $("#modelItem13").text("Sulfites");
+                    $("#modelItem14").text("Œufs et dérivés");
+                    categoryHtml = `
+                                            <div class="category">
+                                                    <h3>${categories.$values[i].categoryNameFrance}</h3>
+                                                <ul>`;
+
+                    var foodItem = foodItems.$values
+                        .filter(item => item.categoryID === categories.$values[i].categoryID);
+                    for (var j = 0; j < foodItem.length; j++) {
+
+                        var subtextHtml = foodItem[j].subtextFrance ? `<span class="subtext">${foodItem[j].subtextFrance}</span>` : '';
+
+                        // if (foodItem[j].isAvailable === true) {
+                        categoryHtml += `
+                                                <li class="available">
+                                                    <div class="item-name">
+                                                        <div class="item-details">
+                                                                <span class="name">${foodItem[j].itemNameFrance}</span>
+                                                        </div>
+                                                            <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                            ${subtextHtml}
+                                                        <span class="itemprice">${foodItem[j].itemPriceFrance}</span>
+                                                </li>`;
+                        // }
+                        // else {
+                        //     categoryHtml += `
+                        //                         <li class="available">
+                        //                             <div class="item-name">
+                        //                                 <div class="item-details">
+                        //                                       <del>  <span class="name">${foodItem[j].itemNameFrance}</span></del>
+                        //                                 </div>
+                        //                                     <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                        //                                     <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        //                                 </button>
+                        //                             </div>
+                        //                                  <del>   ${subtextHtml}
+                        //                                 <span class="itemprice">${foodItem[j].itemPriceFrance}</span></del>
+                        //                         </li>`;
+                        // }
+                    }
+                }
+
+                if (lang === "DE") {
+                    $("#modalHeader").text("Allergene");
+                    $("#modelItem1").text("Erdnüsse und Derivate");
+
+                    $("#modelItem2").text("Schalenfrüchte");
+                    $("#modelItem3").text("Milch und Derivate");
+                    $("#modelItem4").text("Weichtiere");
+                    $("#modelItem5").text("Fisch");
+                    $("#modelItem6").text("Sesam");
+                    $("#modelItem7").text("Soja");
+                    $("#modelItem8").text("Krustentiere");
+                    $("#modelItem9").text("Gluten");
+                    $("#modelItem10").text("Lupinen");
+                    $("#modelItem11").text("Senf");
+                    $("#modelItem12").text("Sellerie");
+                    $("#modelItem13").text("Sulfite");
+                    $("#modelItem14").text("Eier und Derivate");
+                    categoryHtml = `
+                                                <div class="category">
+                                                        <h3>${categories.$values[i].categoryNameGermany}</h3>
+                                                    <ul>`;
+
+                    var foodItem = foodItems.$values
+                        .filter(item => item.categoryID === categories.$values[i].categoryID);
+                    for (var j = 0; j < foodItem.length; j++) {
+
+                        var subtextHtml = foodItem[j].subtextGermany ? `<span class="subtext">${foodItem[j].subtextGermany}</span>` : '';
+
+                        // if (foodItem[j].isAvailable === true) {
+                        categoryHtml += `
+                                                    <li class="available">
+                                                        <div class="item-name">
+                                                            <div class="item-details">
+                                                                    <span class="name">${foodItem[j].itemNameGermany}</span>
+                                                            </div>
+                                                                <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                                                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                                ${subtextHtml}
+                                                            <span class="itemprice">${foodItem[j].itemPriceGermany}</span>
+                                                    </li>`;
+                        // }
+                        // else {
+                        //     categoryHtml += `
+                        //                             <li class="available">
+                        //                                 <div class="item-name">
+                        //                                     <div class="item-details">
+                        //                                          <del>   <span class="name">${foodItem[j].itemNameGermany}</span></del>
+                        //                                     </div>
+                        //                                         <button class="btnInfo" onclick="showItemModal('${foodItem[j].allergens}')">
+                        //                                         <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        //                                     </button>
+                        //                                 </div>
+                        //                                      <del>   ${subtextHtml}
+                        //                                     <span class="itemprice">${foodItem[j].itemPriceGermany}</span></del>
+                        //                             </li>`;
+                        // }
+                    }
+                }
+                categoryHtml += `</ul></div>`;
+                categoryContainer.append(categoryHtml);
+            }
+
+        }
+
+        window.showItemModal = function (item) {
+            $('#exampleModal').modal('show')
+
+            const allergeneItems = $(".allergene");
+            if (allergeneItems.length > 0) {
+                allergeneItems.removeClass('on');
+            }
+            const allergens = item ? item.split(',').map(Number) : [];
+            if (allergens.length > 0) {
+                const allergens = item ? item.split(',').map(Number) : [];
+                if (allergens.length > 0) {
+
+
+                    allergeneItems.each(function () {
+                        const itemValue = parseInt($(this).attr('item'));
+                        const exactMatch = allergens.find(val => val === itemValue);
+                        if (exactMatch !== undefined && allergens.filter(val => val === exactMatch).length === 1) {
+                            $(this).addClass('on');
+                        }
+
+                    });
+                }
+
+            }
+        }
+        window.closeModal = function () {
+            $('#exampleModal').modal('toggle');
+        }
+    });
+
+</script>

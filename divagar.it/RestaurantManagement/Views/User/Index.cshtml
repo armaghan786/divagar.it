@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ApplicationUser>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!--begin::Card-->
+<div class="card">
+
+    <!--begin::Card body-->
+    <div class="card-body py-4">
+        <!--begin::Table-->
+        <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_tableusers">
+            <thead>
+                <tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
+
+                    <th class="min-w-125px">User</th>
+                    <th class="min-w-125px">Is Verified</th>
+                    <th class="text-end min-w-100px">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-600 fw-semibold">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="d-flex align-items-center">
+                            <div class="d-flex flex-column">
+                                <span>@item.Email</span>
+                            </div>
+                        </td>
+                        <td>
+                            @if (item.EmailConfirmed == false)
+                            {
+                                <div class="badge badge-light fw-bold">Not Confirmed</div>
+                            }
+                            else
+                            {
+                                <div class="badge badge-light-success fw-bold">Confirmed</div>
+                            }
+                        </td>
+                        <td style="text-align:end;">
+                            @if (item.EmailConfirmed == false)
+                            {
+                                <a href="/User/Index?id=@item.Id&isconfirmed=true" class="badge badge-light-success fw-bold">Active</a>
+                            }
+                            else
+                            {
+                                <a href="/User/Index?id=@item.Id&isconfirmed=false" class="badge badge-light fw-bold">Deactive</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!--end::Table-->
+    </div>
+    <!--end::Card body-->
+</div>
+<!--end::Card-->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+
+<script>
+    $("#kt_tableusers").DataTable({
+        "language": {
+            "lengthMenu": "Show _MENU_",
+        },
+        "dom":
+            "<'row mb-2'" +
+            "<'col-sm-6 d-flex align-items-center justify-conten-start dt-toolbar'l>" +
+            "<'col-sm-6 d-flex align-items-center justify-content-end dt-toolbar'f>" +
+            ">" +
+
+            "<'table-responsive'tr>" +
+
+            "<'row'" +
+            "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" +
+            "<'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p>" +
+            ">"
+    });
+</script>

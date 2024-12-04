@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\samee\source\repos\RestaurantManagement\RestaurantManagement\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2024-08-26T20:00:36.0362155Z;True|2024-08-25T15:35:49.1523571+05:00;True|2024-08-24T05:34:41.3485056+05:00;True|2024-08-22T03:21:27.6205044+05:00;True|2024-08-22T01:58:12.3765163+05:00;True|2024-08-21T00:43:14.2170147+05:00;True|2024-08-21T00:38:38.8212095+05:00;True|2024-08-20T23:06:21.5051044+05:00;True|2024-08-20T01:57:14.3605644+05:00;True|2024-08-20T01:48:33.2637075+05:00;True|2024-08-20T01:46:04.5006592+05:00;True|2024-08-19T23:51:53.3464124+05:00;True|2024-08-15T22:50:24.1839572+05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=68.71.129.120,1533%3bDatabase=alconigl_RestaurantIT%3bUser Id=restaurantit%3bPassword=Igor%40143/.,%3bTrustServerCertificate=True%3bEncrypt=True%3bConnection Timeout=100%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

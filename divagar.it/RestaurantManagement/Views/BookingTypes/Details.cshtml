@@ -1,0 +1,30 @@
+﻿@model RestaurantManagement.Models.BookingType
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BookingType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingTypee)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BookingTypee)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfTables)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NoOfTables)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BookingTypeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

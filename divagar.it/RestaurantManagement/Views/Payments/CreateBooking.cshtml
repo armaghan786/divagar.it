@@ -1,0 +1,254 @@
+﻿    @model RestaurantManagement.Models.Stripe.BookingViewModel
+
+@{
+    ViewData["Title"] = "Create Security Deposit";
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> divagar</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-12" id="HeaderImage" style="background-color:#FDFBF7;text-align:center;">
+                <img width="150" height="105" src="https://assets.cdn.filesafe.space/5vlvY9vHOsgHMYNfAVQ5/media/668c22938e395d405ed4f568.png" alt=" divagar">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form id="payment-form" method="post" action="/Payments/CreateBooking" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" id="firstName" name="FirstName" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    First name is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" id="lastName" name="LastName" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Last name is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="Email" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    A valid email is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input type="tel" id="phoneNumber" name="PhoneNumber" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="allergies" class="form-label">Allergies</label>
+                                <input type="text" id="allergies" name="Allergies" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+                                <label for="notes" class="form-label">Notes</label>
+                                <textarea id="notes" name="Notes" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="numberOfPeople" class="form-label">Number of People</label>
+                                <input type="number" id="numberOfPeople" name="NumberOfPeople" class="form-control" value="1" min="1" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid number of people.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+                                <label for="price" class="form-label">Total Price</label>
+                                <input type="text" id="price" class="form-control" value="€ 20" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="card-element" class="form-control mb-3">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10"></div>
+                        <div class="col-lg-2 col-md-3 col-sm-12 text-end">
+                            <p id="errorMessage"></p>
+                            <button type="submit" class="btn btn-primary w-100" id="btnSubmit">Submit Payment</button>
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="StripeToken" name="StripeToken" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    const publishedKey = '@ViewBag.PublishedKey';
+
+    var stripe = Stripe(publishedKey);
+    var elements = stripe.elements();
+    var card = elements.create('card');
+    card.mount('#card-element');
+
+    card.on('change', function (event) {
+        if (event.complete) {
+            stripe.createPaymentMethod({
+                type: 'card',
+                card: card,
+                billing_details: {
+                    name: document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value,
+                    email: document.getElementById('email').value
+                },
+            }).then(function (result) {
+                if (result.error) {
+                    setTimeout(function () {
+                        $("#errorMessage").text("Failed to create payment method: " + result.error.message)
+                        document.getElementById('errorMessage').style.display = 'none';
+                    }, 5000);
+
+                } else {
+                    document.getElementById('StripeToken').value = result.paymentMethod.id;
+                }
+            });
+        }
+    });
+
+    document.getElementById('firstName').addEventListener('input', function () {
+        card.update({ value: { name: this.value + ' ' + document.getElementById('lastName').value } });
+    });
+
+    document.getElementById('email').addEventListener('input', function () {
+        card.update({ value: { email: this.value } });
+    });
+
+    document.getElementById('numberOfPeople').addEventListener('input', function () {
+        var numberOfPeople = this.value;
+        var price = numberOfPeople * 20;
+        document.getElementById('price').value = '€' + price;
+    });
+
+    document.getElementById('payment-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var firstName = document.getElementById('firstName').value.trim();
+        var lastName = document.getElementById('lastName').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var phoneNumber = document.getElementById('phoneNumber').value.trim();
+        var numberOfPeople = document.getElementById('numberOfPeople').value;
+        var stripeTokenInput = document.getElementById('StripeToken');
+
+        if (!firstName || !lastName || !validateEmail(email) || !validatePhone(phoneNumber) || numberOfPeople < 1) {
+            alert("Please fill in all required fields with valid information.");
+            return;
+        }
+
+        if (!stripeTokenInput.value) {
+
+            stripe.createPaymentMethod({
+                type: 'card',
+                card: card,
+                billing_details: {
+                    name: firstName + ' ' + lastName,
+                    email: email,
+                },
+            }).then(function (result) {
+                if (result.error) {
+                    setTimeout(function () {
+                        $("#errorMessage").text("Failed to create payment method: " + result.error.message)
+                        document.getElementById('errorMessage').style.display = 'none';
+                    }, 5000);
+
+                } else {
+
+                    stripeTokenInput.value = result.paymentMethod.id;
+                    document.getElementById('payment-form').submit();
+                }
+            });
+        } else {
+            document.getElementById('payment-form').submit();
+        }
+    });
+
+    // Email validation function
+    function validateEmail(email) {
+        var re = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    // Phone validation function (basic check)
+    function validatePhone(phone) {
+        var re = /^[0-9\-\+\(\) ]+$/;
+        return phone.length >= 10 && re.test(phone);
+    }
+
+    // Bootstrap validation
+    (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>

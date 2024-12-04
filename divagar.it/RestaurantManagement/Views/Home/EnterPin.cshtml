@@ -1,0 +1,67 @@
+﻿@model EnterPinViewModel
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4" style="width: 350px; border-radius: 10px;">
+
+        @if (Model.ErrorMessage != null)
+        {
+            <div class="alert alert-danger mt-3 text-center" role="alert">@Model.ErrorMessage</div>
+        }
+
+        <form asp-action="Verifypin" method="post" class="d-flex flex-column align-items-center">
+            <div class="form-group w-100">
+                <label for="Pin" class="form-label">INSERISCI IL PIN:</label>
+                <input type="password" name="Pin" class="form-control form-control-lg" placeholder="●●●●●●" required style="letter-spacing: 5px;">
+            </div>
+            <button type="submit" class="btn btn-primary mt-4 d-flex justify-content-center align-items-center" style="width: 100px; height: 50px; border-radius: 3px;">Accedi</button>
+        </form>
+
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card {
+        background-color: #fff;
+        border: none;
+    }
+
+    .form-control {
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        background-color: #290302;
+        border-color: #290302;
+    }
+
+        .btn-primary:hover {
+            background-color: #290302;
+            border-color: #290302;
+        }
+
+    .alert {
+        position: relative;
+        padding: 0.5rem 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .btn-lg, .btn-group-lg > .btn {
+        padding: 15px;
+        font-size: small;
+        border-radius: 0.3rem;
+    }
+
+    .btn {
+        display: inline-block;
+        line-height: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+</style>

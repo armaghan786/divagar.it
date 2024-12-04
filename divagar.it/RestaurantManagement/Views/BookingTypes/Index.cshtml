@@ -1,0 +1,76 @@
+﻿@model IEnumerable<RestaurantManagement.Models.BookingType>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+<a asp-action="Create" class="btn btn-flex btn-outline btn-color-gray-700 btn-active-color-primary bg-body h-40px fs-7 fw-bold mb-1">Create New</a>
+
+
+<!--begin::Card-->
+<div class="card">
+
+    <!--begin::Card body-->
+    <div class="card-body py-4">
+
+        <!--begin::Table-->
+        <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_tableusers">
+            <thead>
+                <tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
+
+                    <th class="min-w-125px">Booking Type</th>
+                    <th class="min-w-125px">No Of Tables</th>
+                    <th class="min-w-125px">No Of Seats</th>
+                    <th class="text-end min-w-100px">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-600 fw-semibold">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <span>@item.BookingTypee</span>
+                        </td>
+                        <td>
+                            <span>@item.NoOfTables</span>
+                        </td>
+                        <td>
+                            <span>@item.NoOfSeats</span>
+                        </td>
+                        <td style="text-align:end;">
+                            <a asp-action="Edit" asp-route-id="@item.BookingTypeId" class="btn btn-warning">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.BookingTypeId" class="btn btn-danger">Delete</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!--end::Table-->
+    </div>
+    <!--end::Card body-->
+</div>
+<!--end::Card-->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+
+<script>
+    $("#kt_tableusers").DataTable({
+        "language": {
+            "lengthMenu": "Show _MENU_",
+        },
+        "dom":
+            "<'row mb-2'" +
+            "<'col-sm-6 d-flex align-items-center justify-conten-start dt-toolbar'l>" +
+            "<'col-sm-6 d-flex align-items-center justify-content-end dt-toolbar'f>" +
+            ">" +
+
+            "<'table-responsive'tr>" +
+
+            "<'row'" +
+            "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" +
+            "<'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p>" +
+            ">"
+    });
+</script>

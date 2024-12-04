@@ -1,0 +1,87 @@
+﻿@model MenuVM
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> divagar</title>
+    <link rel="icon" type="image/x-icon" href="~/image/favicon.ico">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+    <!-- Toastr CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        #HeaderImage {
+            padding: 20px 10px 0;
+            opacity: 1;
+            text-align: center;
+            box-shadow: none;
+        }
+
+        #footer {
+            font-size: 12px;
+            font-weight: 400;
+            color: #fafafa;
+            margin-top:40px;
+        }
+
+        #footera {
+            color: #188bf6;
+            text-decoration: none;
+        }
+
+        #footerSetting {
+            font-family: 'Amiko';
+            background-color: #00000000;
+            color: #000000;
+            box-shadow: none;
+            padding: 20px 0 0;
+            opacity: 1;
+            text-shadow: none;
+            line-height: 1.3em;
+            letter-spacing: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12" id="HeaderImage">
+                <img width="150" height="105" src="https://assets.cdn.filesafe.space/5vlvY9vHOsgHMYNfAVQ5/media/668c22938e395d405ed4f568.png" alt=" divagar">
+            </div>
+        </div>
+       <div class="row text-center">
+            <div class="col-lg-6 mb-3 mt-4">
+                <a href="https://alconigliobianco.it/food-menu"><img src="~/image/668d5307440ff2021f1b7356.png" width="250" /></a>
+            </div>
+           <div class="col-lg-6">
+                <a href="https://alconigliobianco.it/wine-menu"><img src="~/image/668c2d0d350bac066cd9df9b.png" width="250" /></a>
+            </div>
+            
+       </div>
+        <div class="row">
+
+            <divc class="col-12" class="c-sub-heading c-wrapper">
+                <div id="footerSetting">
+                    <h2 id="footer"><i class="fa fa-power-off"></i> Powered By <a id="footera" target="_self" href="https://tablesuite.it/">TableSuite</a></h2>
+                </div>
+            </divc>
+        </div>
+    </div>
+    
+</body>
+</html>

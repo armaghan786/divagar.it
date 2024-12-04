@@ -1,0 +1,43 @@
+﻿@model RestaurantManagement.Models.BookingType
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+<h4>Edit Booking Type</h4>
+<div class="card">
+    <div class="card-body py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="BookingTypeId" />
+                    <div class="form-group">
+                        <label asp-for="BookingTypee" class="control-label"></label>
+                        <input asp-for="BookingTypee" class="form-control" />
+                        <span asp-validation-for="BookingTypee" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NoOfTables" class="control-label"></label>
+                        <input asp-for="NoOfTables" class="form-control" />
+                        <span asp-validation-for="NoOfTables" class="text-danger"></span>
+                    </div>  
+                    <div class="form-group">
+                        <label asp-for="NoOfSeats" class="control-label"></label>
+                        <input asp-for="NoOfSeats" class="form-control" />
+                        <span asp-validation-for="NoOfSeats" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-1">
+                        <input type="submit" value="Update" class="btn btn-warning" />
+                        <a asp-action="Index" class="btn btn-primary">Back to List</a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+

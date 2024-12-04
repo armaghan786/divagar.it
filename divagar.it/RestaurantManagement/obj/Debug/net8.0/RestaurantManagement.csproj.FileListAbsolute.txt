@@ -1,0 +1,9 @@
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.csproj.AssemblyReference.cache
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.AssemblyInfoInputs.cache
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.AssemblyInfo.cs
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.csproj.CoreCompileInputs.cache
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.MvcApplicationPartsAssemblyInfo.cs
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.MvcApplicationPartsAssemblyInfo.cache
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.RazorAssemblyInfo.cache
+D:\Resturant\Divagar\RestaurantManagement\obj\Debug\net8.0\RestaurantManagement.RazorAssemblyInfo.cs
