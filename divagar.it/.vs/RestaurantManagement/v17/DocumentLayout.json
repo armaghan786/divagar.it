@@ -1,97 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Resturant\\Divagar\\",
+  "WorkspaceRootPath": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\home\\winemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\winemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\home\\foodmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\foodmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\home\\bevandemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\bevandemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\home\\asportomenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\asportomenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\wwwroot\\funnel\\icon\\favicon.ico||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\wwwroot\\funnel\\icon\\favicon.ico||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\wwwroot\\image\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\wwwroot\\image\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\home\\menunavigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\menunavigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\dbinitializer\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\home\\asportomenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\asportomenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\home\\winemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\winemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\home\\foodmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\foodmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\home\\bevandemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\bevandemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\home\\enterpin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\enterpin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\wwwroot\\funnel\\icon\\favicon.ico||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\wwwroot\\funnel\\icon\\favicon.ico||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\wwwroot\\image\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\wwwroot\\image\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\home\\menunavigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\home\\menunavigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\dbinitializer\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\dbinitializer\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\dbinitializer\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\dbinitializer\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\dbinitializer\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\restaurantmanagement\\models\\footcategoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|d:\\resturant\\divagar\\divagargit\\divagar.it\\restaurantmanagement\\models\\footcategoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FEA446D-C895-48C4-AFBE-969682A38A72}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\models\\footcategoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -102,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -111,21 +115,34 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "EnterPin.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\EnterPin.cshtml",
+              "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Home\\EnterPin.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\EnterPin.cshtml",
+              "RelativeToolTip": "RestaurantManagement\\Views\\Home\\EnterPin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T12:38:05.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "favicon.ico",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\wwwroot\\funnel\\icon\\favicon.ico",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\wwwroot\\funnel\\icon\\favicon.ico",
               "RelativeDocumentMoniker": "RestaurantManagement\\wwwroot\\funnel\\icon\\favicon.ico",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\wwwroot\\funnel\\icon\\favicon.ico",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\wwwroot\\funnel\\icon\\favicon.ico",
               "RelativeToolTip": "RestaurantManagement\\wwwroot\\funnel\\icon\\favicon.ico",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
               "WhenOpened": "2024-12-04T04:38:31.863Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "favicon.ico - Bitmap [50x50, 24 bit, JPG]",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\wwwroot\\favicon.ico",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\wwwroot\\favicon.ico",
               "RelativeDocumentMoniker": "RestaurantManagement\\wwwroot\\favicon.ico",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\wwwroot\\favicon.ico - Bitmap [50x50, 24 bit, JPG]",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\wwwroot\\favicon.ico - Bitmap [50x50, 24 bit, JPG]",
               "RelativeToolTip": "RestaurantManagement\\wwwroot\\favicon.ico - Bitmap [50x50, 24 bit, JPG]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
               "WhenOpened": "2024-12-04T04:35:36.109Z",
@@ -133,11 +150,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "favicon.ico - Icon [16x16, 32 bit, BMP]",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\wwwroot\\image\\favicon.ico",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\wwwroot\\image\\favicon.ico",
               "RelativeDocumentMoniker": "RestaurantManagement\\wwwroot\\image\\favicon.ico",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\wwwroot\\image\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\wwwroot\\image\\favicon.ico - Icon [16x16, 32 bit, BMP]",
               "RelativeToolTip": "RestaurantManagement\\wwwroot\\image\\favicon.ico - Icon [16x16, 32 bit, BMP]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
               "WhenOpened": "2024-12-04T04:35:32.172Z",
@@ -145,11 +162,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "MenuNavigator.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\MenuNavigator.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\MenuNavigator.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Home\\MenuNavigator.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\MenuNavigator.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\MenuNavigator.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Home\\MenuNavigator.cshtml",
               "ViewState": "AgIAAEgAAAAAAAAAAADwv08AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -158,11 +175,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\appsettings.json",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\appsettings.json",
               "RelativeDocumentMoniker": "RestaurantManagement\\appsettings.json",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\appsettings.json",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\appsettings.json",
               "RelativeToolTip": "RestaurantManagement\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -171,11 +188,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IDbInitializer.cs",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\DbInitializer\\IDbInitializer.cs",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\DbInitializer\\IDbInitializer.cs",
               "RelativeDocumentMoniker": "RestaurantManagement\\DbInitializer\\IDbInitializer.cs",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\DbInitializer\\IDbInitializer.cs",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\DbInitializer\\IDbInitializer.cs",
               "RelativeToolTip": "RestaurantManagement\\DbInitializer\\IDbInitializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -183,11 +200,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "DbInitializer.cs",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\DbInitializer\\DbInitializer.cs",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\DbInitializer\\DbInitializer.cs",
               "RelativeDocumentMoniker": "RestaurantManagement\\DbInitializer\\DbInitializer.cs",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\DbInitializer\\DbInitializer.cs",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\DbInitializer\\DbInitializer.cs",
               "RelativeToolTip": "RestaurantManagement\\DbInitializer\\DbInitializer.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAcwDAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -197,9 +214,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -208,24 +225,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "WineMenu.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\WineMenu.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\WineMenu.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Home\\WineMenu.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\WineMenu.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\WineMenu.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Home\\WineMenu.cshtml",
-              "ViewState": "AgIAABABAAAAAAAAAAAcwBoBAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-03T07:57:33.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "BookingController.cs",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Controllers\\BookingController.cs",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "RestaurantManagement\\Controllers\\BookingController.cs",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Controllers\\BookingController.cs",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Controllers\\BookingController.cs",
               "RelativeToolTip": "RestaurantManagement\\Controllers\\BookingController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -233,11 +250,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -245,11 +262,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -257,11 +274,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Shared\\Error.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Shared\\Error.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Shared\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -269,11 +286,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Shared\\_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -281,11 +298,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Shared\\_LayoutAdmin.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -294,64 +311,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T20:27:11.631Z",
+              "WhenOpened": "2024-12-02T20:27:11.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Program.cs",
+              "RelativeDocumentMoniker": "RestaurantManagement\\Program.cs",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Program.cs",
+              "RelativeToolTip": "RestaurantManagement\\Program.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAnwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T20:19:40.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Program.cs",
-              "RelativeDocumentMoniker": "RestaurantManagement\\Program.cs",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Program.cs",
-              "RelativeToolTip": "RestaurantManagement\\Program.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAcwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:19:40.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Menu.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\Menu.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\Menu.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Home\\Menu.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\Menu.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\Menu.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Home\\Menu.cshtml",
-              "ViewState": "AgIAAHEBAAAAAAAAAAAAwHIBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKcCAAAAAAAAAAAswKwCAAAjAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-02T17:21:22.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "BevandeMenu.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\BevandeMenu.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\BevandeMenu.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Home\\BevandeMenu.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\BevandeMenu.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\BevandeMenu.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Home\\BevandeMenu.cshtml",
-              "ViewState": "AgIAAEABAAAAAAAAAAAAwFMBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAnwCwBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-02T17:16:32.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FoodMenu.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\FoodMenu.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\FoodMenu.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Home\\FoodMenu.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\FoodMenu.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\FoodMenu.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Home\\FoodMenu.cshtml",
-              "ViewState": "AgIAAEIBAAAAAAAAAAAswFcBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHsBAAAAAAAAAAAIwIABAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-02T17:09:57.257Z",
               "EditorCaption": ""
@@ -360,22 +377,22 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AsportoMenu.cshtml",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\AsportoMenu.cshtml",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\AsportoMenu.cshtml",
               "RelativeDocumentMoniker": "RestaurantManagement\\Views\\Home\\AsportoMenu.cshtml",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Views\\Home\\AsportoMenu.cshtml",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Views\\Home\\AsportoMenu.cshtml",
               "RelativeToolTip": "RestaurantManagement\\Views\\Home\\AsportoMenu.cshtml",
-              "ViewState": "AgIAAD4BAAAAAAAAAAAAAFMBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAAAFUBAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-02T17:09:51.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "FootCategoryItem.cs",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Models\\FootCategoryItem.cs",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Models\\FootCategoryItem.cs",
               "RelativeDocumentMoniker": "RestaurantManagement\\Models\\FootCategoryItem.cs",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Models\\FootCategoryItem.cs",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Models\\FootCategoryItem.cs",
               "RelativeToolTip": "RestaurantManagement\\Models\\FootCategoryItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,13 +400,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Resturant\\Divagar\\RestaurantManagement\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "RestaurantManagement\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Resturant\\Divagar\\RestaurantManagement\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\Controllers\\HomeController.cs",
               "RelativeToolTip": "RestaurantManagement\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAEYEAAAAAAAAAAAQwMwFAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAOYBAAAAAAAAAADwv/UBAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T16:59:25.565Z",
               "EditorCaption": ""

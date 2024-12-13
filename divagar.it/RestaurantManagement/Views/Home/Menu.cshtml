@@ -499,7 +499,7 @@
                         <h3>
                             @Html.Raw(HttpUtility.HtmlEncode(foodItem.CategoryName))
                             <button class="add-button" onclick='openAsportoModal("addAsportoItemModal", @foodItem.CategoryID)'>Add Subcategory</button>
-                            <button class="edit-category-button" onclick='openAsportoModal("editAsportoCategoryModal", @foodItem.CategoryID, "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryName))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameEnglish))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameSpanish))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameFrance))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameGermany))")'>Modifica categoria</button>
+                            <button class="edit-category-button" onclick='openAsportoModal("editAsportoCategoryModal", @foodItem.CategoryID, "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryName))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameEnglish))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameSpanish))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameFrance))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameGermany))")'>Modifica Categorie</button>
                             <button class="delete-category-button" onclick='openAsportoModal("deleteAsportoCategoryModal", @foodItem.CategoryID)'>Elimina categoria Categorie</button>
                             @if (i > 0)
                             {
@@ -580,7 +580,7 @@
                         <h3>
                             @Html.Raw(HttpUtility.HtmlEncode(foodItem.CategoryName))
                             <button class="add-button" onclick='openBevandeModal("addBevandeItemModal",@foodItem.CategoryID)'>Add Subcategory</button>
-                            <button class="edit-category-button" onclick='openBevandeModal("editBevandeCategoryModal", @foodItem.CategoryID, "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryName))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameEnglish))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameSpanish))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameFrance))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameGermany))")'>Modifica categoria</button>
+                            <button class="edit-category-button" onclick='openBevandeModal("editBevandeCategoryModal", @foodItem.CategoryID, "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryName))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameEnglish))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameSpanish))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameFrance))", "@Html.Raw(HttpUtility.JavaScriptStringEncode(foodItem.CategoryNameGermany))")'>Modifica Categorie</button>
                             <button class="delete-category-button" onclick='openBevandeModal("deleteBevandeCategoryModal", @foodItem.CategoryID)'>Elimina categoria</button>
                             @if (i > 0)
                             {
@@ -664,8 +664,8 @@
 
                         </h3>
                         <button class="add-subcategory-button" onclick='openModal("addWineSubcategoryModal", "wine", @wineCategory.CategoryID)'>Add Subcategory</button>
-                        <button class="edit-category-button" onclick='openModal("editWineCategoryModal", "wine", @wineCategory.CategoryID, "@Html.Raw(HttpUtility.JavaScriptStringEncode(wineCategory.CategoryName))")'>Modifica categoria</button>
-                        <button class="delete-category-button" onclick='openModal("deleteWineCategoryModal", "wine", @wineCategory.CategoryID)'>Elimina categoria</button>
+                        <button class="edit-category-button" onclick='openModal("editWineCategoryModal", "wine", @wineCategory.CategoryID, "@Html.Raw(HttpUtility.JavaScriptStringEncode(wineCategory.CategoryName))")'>Modifica Categorie</button>
+                        <button class="delete-category-button" onclick='openModal("deleteWineCategoryModal", "wine", @wineCategory.CategoryID)'>Elimina Categorie</button>
                         <!-- Up/Down Arrow for Categories -->
                         @if (wineCategory != Model.WineCategories.First())
                         {
@@ -682,8 +682,8 @@
                                     @Html.Raw(HttpUtility.HtmlEncode(wineSubcategory.SubcategoryName))
 
                                     <button class="add-button" onclick='openModal("addWineItemModal", "wine", "", "", "", "", "", "", "", @wineSubcategory.SubcategoryID)'>Aggiungi articolo</button>
-                                    <button class="edit-subcategory-button" onclick='openModal("editWineSubcategoryModal", "wine", "", "", "", "", "", "","", @wineSubcategory.SubcategoryID, "@Html.Raw(HttpUtility.JavaScriptStringEncode(wineSubcategory.SubcategoryName))")'>Edit Subcategory</button>
-                                    <button class="delete-subcategory-button" onclick='openModal("deleteWineSubcategoryModal", "wine", "", "", "", "", "", "", "", @wineSubcategory.SubcategoryID)'>Delete Subcategory</button>
+                                    <button class="edit-subcategory-button" onclick='openModal("editWineSubcategoryModal", "wine", "", "", "", "", "", "","", @wineSubcategory.SubcategoryID, "@Html.Raw(HttpUtility.JavaScriptStringEncode(wineSubcategory.SubcategoryName))")'>Modifica Categorie</button>
+                                    <button class="delete-subcategory-button" onclick='openModal("deleteWineSubcategoryModal", "wine", "", "", "", "", "", "", "", @wineSubcategory.SubcategoryID)'>Elimina Categorie</button>
                                     <!-- Up/Down Arrow for Subcategories -->
                                     @if (wineSubcategory != wineCategory.WineSubcategories.First())
                                     {
@@ -730,7 +730,7 @@
                                                     id="wine_@wineItem.ItemID"
                                                     data-isavailable="@wineItem.IsAvailable"
                                                     style="background-color:@(wineItem.IsAvailable ? "#77AB59" : "#EAAE52")">
-                                                @(wineItem.IsAvailable ? "Available" : "Not Available")
+                                                @(wineItem.IsAvailable ? "Disponibile" : "Non Disponibile")
                                             </button>
                                         </li>
                                     }
@@ -789,11 +789,11 @@
         </div>
     </div>
 
-    <!-- Modifica categoria Modal -->
+    <!-- Modifica Categorie Modal -->
     <div id="editFoodCategoryModal" class="modal">
         <div class="modal-content">
             <span class="close close-button" onclick="closeModal('editFoodCategoryModal')">&times;</span>
-            <h2>Modifica categoria</h2>
+            <h2>Modifica Categorie</h2>
             <form id="editFoodCategoryForm">
                 <div class="container">
 
@@ -1136,11 +1136,11 @@
         </div>
     </div>
 
-    <!-- Modifica categoria Modal -->
+    <!-- Modifica Categorie Modal -->
     <div id="editAsportoCategoryModal" class="modal">
         <div class="modal-content">
             <span class="close close-button" onclick="closeModal('editAsportoCategoryModal')">&times;</span>
-            <h2>Modifica categoria</h2>
+            <h2>Modifica Categorie</h2>
             <form id="editAsportoCategoryForm">
                 <div class="container">
 
@@ -1481,11 +1481,11 @@
         </div>
     </div>
 
-    <!-- Modifica categoria Modal -->
+    <!-- Modifica Categorie Modal -->
     <div id="editBevandeCategoryModal" class="modal">
         <div class="modal-content">
             <span class="close close-button" onclick="closeModal('editBevandeCategoryModal')">&times;</span>
-            <h2>Modifica categoria</h2>
+            <h2>Modifica Categorie</h2>
             <form id="editBevandeCategoryForm">
                 <div class="container">
 

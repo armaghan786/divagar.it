@@ -11260,11 +11260,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Resturant\\Divagar\\RestaurantManagement\\RestaurantManagement.csproj",
+      "projectUniqueName": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\RestaurantManagement.csproj",
       "projectName": "RestaurantManagement",
-      "projectPath": "D:\\Resturant\\Divagar\\RestaurantManagement\\RestaurantManagement.csproj",
+      "projectPath": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\RestaurantManagement.csproj",
       "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-      "outputPath": "D:\\Resturant\\Divagar\\RestaurantManagement\\obj\\",
+      "outputPath": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

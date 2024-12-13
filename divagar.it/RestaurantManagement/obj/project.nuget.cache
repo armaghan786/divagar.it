@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N8ApLpp98Mw=",
+  "dgSpecHash": "kvoVQRO1iCM=",
   "success": true,
-  "projectFilePath": "D:\\Resturant\\Divagar\\RestaurantManagement\\RestaurantManagement.csproj",
+  "projectFilePath": "D:\\Resturant\\Divagar\\divagarGit\\divagar.it\\RestaurantManagement\\RestaurantManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\123\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
